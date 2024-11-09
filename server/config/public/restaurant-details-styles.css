@@ -1,0 +1,40 @@
+
+
+.restaurant-details {
+    margin: 30px auto; 
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 900px;
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+.restaurant-details-img { 
+    width: 100%; 
+    max-width: 300px;
+    margin-right: 30px;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+.restaurant-details h1, .restaurant-details h2 {
+    margin: 5px 0; 
+}
+
+.restaurant-details div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+    .restaurant-details-img {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+
+

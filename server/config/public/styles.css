@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 90%);
+    color: #0b0a0a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.header-image {
+    width: 100%;
+    height: 20vh;
+    background: url('images/houston-background.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.header-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(249, 249, 249);
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #080908;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1e9e9;
+    font-weight: bold;
+    padding: 5px 100px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0d0101;
+    color: #007bff;
+}
+
+main {
+    padding: 20px;
+    background-color: #00445d;
+    box-shadow: 0 4px 8px rgba(82, 31, 31, 0.338);
+    width: 100%; 
+    box-sizing: border-box; 
+    flex-grow: 1;
+}
+
+.intro {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.intro img {
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.attraction {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00445d; 
+    box-shadow: none;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.attraction-background {
+    height: 20vh; 
+    background: url('images/houston-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 253, 253);
+    background-size: cover; 
+    position: relative;
+}
+
+.attraction-background h1 {
+    font-size: 3rem;
+    background-color: rgba(68, 76, 84, 0.922); 
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.attraction img {
+    width: 400px; 
+    height: auto;
+    margin-right: 10px;  
+    border-radius: 0;
+    border: none;
+    flex-shrink: 0;
+}
+
+.attraction div {
+    max-width: 800px; 
+    color: #9e6ac3;
+    flex-grow: 1;
+}
+
+.attraction h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.attraction p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a65cd7;
+    margin: 0;
+}
+    
+.restaurant-background {
+    height: 20vh;
+    background: url('images/houston-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(248, 244, 244);
+    position: relative;
+    background-size: cover;
+}
+
+.restaurant-background h1 {
+    font-size: 3rem;
+    background-color: rgba(4, 3, 3, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, .20fr); 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px 40px;
+    background-color: #013e54;
+    min-height: 500px;
+}
+
+.restaurant {
+    background-color: #49676e;
+    border: none;
+    text-align: center;
+    box-shadow: none;
+    max-width: 150px;
+    align-self: center;
+    justify-self: center;
+    min-height: 350px;
+    position: relative;
+}
+
+.restaurant img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+
+.restaurant h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.restaurant p {
+    margin-bottom: 5px;
+    color: #36075d;
+}
+
+.restaurant-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    flex-direction: column; 
+}
+
+.restaurant-form-container h1 {
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 20px; 
+    font-size: 3rem; 
+}
+
+.restaurant-form-container form {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #00445d;
+    border: 1px solid #00445d;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+}
+
+form label {
+    font-weight: bold;
+    color: #090707;
+    margin-bottom: 10px;
+    font-size: 1.5rem; 
+    text-align: center; 
+}
+
+.restaurant-form-container form input[type="text"],
+.restaurant-form-container form input[type="tel"],
+.restaurant-form-container form input[type="url"] {
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    font-size: 1.2rem; 
+    color: #0b0a0a;
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.restaurant-form-container form input[type="submit"] {
+    background-color: #0b0a0a;
+    color: #faf6f6;
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; 
+    text-align: center;
+    margin-top: -10px; 
+    align-self: center; 
+}
+
+.restaurant-form-container form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.restaurant-form-container form div {
+    margin-bottom: 15px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(23, 19, 19);
+    font-size: 1rem; 
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px; 
+    right: 5px; 
+    padding: 0; 
+    line-height: 1; 
+}
+
+
+footer {
+    background-color: #3d3c3c;
+    color: rgb(99, 97, 97);
+    text-align: right;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; 
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= restaurant.name %> Details</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+
+    <div class="restaurant-details">
+        <h1><%= restaurant.name %></h1>
+        <p><%= restaurant.address %></p>
+        <p><%= restaurant.phone %></p>
+        <img src="<%= restaurant.photo %>" alt="<%= restaurant.name %> Photo">
+
+        <h2>Reviews</h2>
+        <div class="reviews">
+            <% if (reviews.length > 0) { %>
+                <% reviews.forEach((review) => { %>
+                    <div class="review">
+                        <p><strong>Rating:</strong> <%= review.rating %>/5</p>
+                        <p><%= review.content %></p>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>No reviews available for this restaurant.</p>
+            <% } %>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="/scripts/header.js"></script>
+</body>
+</html>
+
+ 
+
+
+
+
+
